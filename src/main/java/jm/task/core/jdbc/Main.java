@@ -22,6 +22,6 @@ public class Main {
         userDao.getAllUsers();
         userDao.cleanUsersTable();
         userDao.dropUsersTable();
-        System.out.println("Hibernate");
+        System.out.println("Проверка гит");
     }
 }
