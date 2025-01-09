@@ -19,26 +19,26 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public void dropUsersTable() {
-        userDaoJDBC.dropUsersTable();
+        userDaoHibernate.dropUsersTable();
     }
 
     @Override
     public void saveUser(String name, String lastName, byte age) {
-        userDaoJDBC.saveUser(name, lastName, age);
+        userDaoHibernate.saveUser(name, lastName, age);
     }
 
     @Override
     public void removeUserById(long id) {
-        userDaoJDBC.removeUserById(id);
+        userDaoHibernate.removeUserById(id);
     }
 
     @Override
     public List<User> getAllUsers() {
-        return userDaoJDBC.getAllUsers();
+        return userDaoHibernate.getAllUsers();
     }
 
     @Override
     public void cleanUsersTable() {
-        userDaoJDBC.cleanUsersTable();
+        userDaoHibernate.cleanUsersTable();
     }
 }
